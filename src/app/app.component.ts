@@ -1,4 +1,4 @@
-import { Component, QueryList, ViewChild } from '@angular/core';
+import { Component, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { CdkDragEnter, moveItemInArray } from '@angular/cdk/drag-drop';
 
 @Component({
@@ -8,7 +8,7 @@ import { CdkDragEnter, moveItemInArray } from '@angular/cdk/drag-drop';
 })
 export class AppComponent {
   public items: Array<number> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
-  @ViewChild('div') divs: QueryList<any>;
+  @ViewChildren('div') divs: QueryList<any>;
 
   ngAfterViewInit() {
     console.log(this.divs);
