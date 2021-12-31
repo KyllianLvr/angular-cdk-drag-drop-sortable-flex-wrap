@@ -19,27 +19,24 @@
       class="example-box"
     >
       <div #div [id]="item">
-      <span
-      #dragHandleRB
-      [cdkDragLockAxis]="lockAxis"
-      class="dragHandle rb"
-      cdkDrag
-      (cdkDragMoved)="dragMove(dragHandleRB, $event, control)"
-    ></span>
-    <span
-      #dragHandleBottom
-      cdkDragLockAxis="y"
-      class="dragHandle bottom"
-      cdkDrag
-      (cdkDragMoved)="dragMove(dragHandleBottom, $event, control)"
-    ></span>
-    <span
-      #dragHandleRight
-      cdkDragLockAxis="x"
-      class="dragHandle right"
-      cdkDrag
-      (cdkDragMoved)="dragMove(dragHandleRight, $event, control)"
-    ></span>
+        <span
+          #dragHandleRB
+          [cdkDragLockAxis]="lockAxis"
+          class="dragHandle rb"
+          cdkDrag
+        ></span>
+        <span
+          #dragHandleBottom
+          cdkDragLockAxis="y"
+          class="dragHandle bottom"
+          cdkDrag
+        ></span>
+        <span
+          #dragHandleRight
+          cdkDragLockAxis="x"
+          class="dragHandle right"
+          cdkDrag
+        ></span>
         {{ item }}
       </div>
     </div>

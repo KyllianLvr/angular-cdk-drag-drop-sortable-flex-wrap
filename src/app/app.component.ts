@@ -201,4 +201,8 @@ export class AppComponent {
 
     moveItemInArray(this.items, dragIndex, dropIndex);
   }
+
+  clickControl(control: Control): void {
+    this.selectedControl = control;
+  }
 }
